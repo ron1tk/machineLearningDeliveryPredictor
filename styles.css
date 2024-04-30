@@ -1,5 +1,28 @@
-body{
-    margin:0;
+body {
+    margin: 0;
     background: green;
+    color: white; /* Improves readability on green background */
+    font-family: Arial, sans-serif; /* Sets a clean, readable typeface */
     text-align: center;
+}
+
+header, footer {
+    background: darkgreen; /* Slightly darker green for header and footer */
+    padding: 10px 0; /* Adds vertical padding */
+}
+
+h1, h2 {
+    color: #fff; /* Ensures headers are white for contrast */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.2); /* Adds transparency for contrast */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+}
+
+footer {
+    font-size: 0.8em; /* Smaller font size for footer */
+    color: #ddd; /* Light grey color for footer text */
 }
