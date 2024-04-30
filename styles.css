@@ -3,74 +3,77 @@ body, h1, h2, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Classic, professional font */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 body {
-    background: #ffffff; /* Light background for a clean look */
-    color: #333333; /* Dark grey text for contrast and professionalism */
+    background: #ffffff;
+    color: #333;
     text-align: center;
     line-height: 1.6;
     padding: 20px;
 }
 
 header {
-    background: #f8f9fa; /* Light grey background for the header */
+    background: #f8f9fa;
     padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: sticky;
-    top: 0; /* Stick header to the top */
+    top: 0;
     z-index: 1000;
 }
 
 nav a {
     text-decoration: none;
-    color: #007bff; /* Bootstrap blue for links */
+    color: #007bff;
     padding: 8px 16px;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #0056b3; /* Darker blue on hover */
+    color: #0056b3;
 }
 
 h1 {
-    font-size: 2em; /* Slightly smaller to maintain elegance */
-    color: #007bff; /* Bootstrap blue to match link colors */
+    font-size: 2em;
+    color: #007bff;
 }
 
 h1 span {
     display: block;
     font-size: 0.6em;
-    color: #6c757d; /* Bootstrap secondary text color */
-    opacity: 1;
+    color: #6c757d;
     margin-top: 10px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
 section {
-    margin: 40px auto;
-    width: 90%; /* Slightly more width for content */
-    max-width: 960px; /* Maximum width to control layout on large screens */
     background-color: #fff;
-    border: 1px solid #dee2e6; /* Subtle border */
-    padding: 30px;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
 }
 
 section:hover {
-    box-shadow: 0 8px 24px rgba(0,0,0,0.2); /* More pronounced shadow on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 h2 {
     font-size: 1.5em;
-    color: #007bff; /* Consistent color theme */
+    color: #007bff;
     margin-bottom: 20px;
 }
 
 p {
     font-size: 1.1em;
-    color: #6c757d; /* Grey for less aggressive text color */
+    color: #6c757d;
     padding: 0 20px;
 }
