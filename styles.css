@@ -1,59 +1,76 @@
-/* General resets */
+/* General resets and base styles */
 body, h1, h2, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Classic, professional font */
 }
 
 body {
-    background: #121212; /* A darker shade for a more modern look */
-    color: #f0f0f0; /* Slightly off-white for better readability */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, clean font */
+    background: #ffffff; /* Light background for a clean look */
+    color: #333333; /* Dark grey text for contrast and professionalism */
     text-align: center;
     line-height: 1.6;
     padding: 20px;
 }
 
 header {
-    background: #1a1a1a; /* Darker shade for header */
-    padding: 20px 0; /* Ample vertical padding */
-    color: #f0f0f0;
+    background: #f8f9fa; /* Light grey background for the header */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    position: sticky;
+    top: 0; /* Stick header to the top */
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff; /* Bootstrap blue for links */
+    padding: 8px 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0056b3; /* Darker blue on hover */
 }
 
 h1 {
-    font-size: 2.5em; /* Larger size for main title */
-    color: #ff4081; /* A vibrant color for emphasis */
+    font-size: 2em; /* Slightly smaller to maintain elegance */
+    color: #007bff; /* Bootstrap blue to match link colors */
 }
 
 h1 span {
-    display: block; /* Makes the span appear on a new line */
-    font-size: 0.5em; /* Adjusts the font size to be smaller */
-    color: #ffffff; /* Keeps the names white */
-    opacity: 0.75; /* Makes the names slightly translucent for subtlety */
+    display: block;
+    font-size: 0.6em;
+    color: #6c757d; /* Bootstrap secondary text color */
+    opacity: 1;
+    margin-top: 10px;
 }
 
 section {
-    padding: 20px;
-    margin: 20px auto; /* Center sections */
-    width: 80%; /* Optimal reading width */
-    background-color: #222; /* Dark grey for sections */
-    border-radius: 15px; /* Softened corners */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* More pronounced shadow for depth */
-    transition: transform 0.3s ease; /* Smooth transition for interactions */
+    margin: 40px auto;
+    width: 90%; /* Slightly more width for content */
+    max-width: 960px; /* Maximum width to control layout on large screens */
+    background-color: #fff;
+    border: 1px solid #dee2e6; /* Subtle border */
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    transition: box-shadow 0.3s ease;
 }
 
 section:hover {
-    transform: translateY(-5px); /* Subtle lift effect on hover */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2); /* More pronounced shadow on hover */
 }
 
 h2 {
-    font-size: 1.8em;
-    color: #ff4081; /* Matching the title color for consistency */
-    margin-bottom: 10px; /* Space below headers */
+    font-size: 1.5em;
+    color: #007bff; /* Consistent color theme */
+    margin-bottom: 20px;
 }
 
 p {
     font-size: 1.1em;
-    color: #e0e0e0; /* Lighter grey for text for readability */
-    padding: 0 20px; /* Padding for text inside sections */
+    color: #6c757d; /* Grey for less aggressive text color */
+    padding: 0 20px;
 }
