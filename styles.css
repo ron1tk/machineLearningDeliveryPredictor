@@ -25,6 +25,12 @@ h1 {
     color: #ff4081; /* A vibrant color for emphasis */
 }
 
+h1 span {
+    display: block; /* Makes the span appear on a new line */
+    font-size: 0.5em; /* Smaller font size for the names */
+    color: #ffffff; /* Optional: different color for names */
+}
+
 section {
     padding: 20px;
     margin: 20px auto; /* Center sections */
