@@ -1,29 +1,52 @@
-body {
+/* General resets */
+body, h1, h2, p {
     margin: 0;
-    background: black; /* Changed background to black */
-    color: white; /* Ensures text is white for readability */
-    font-family: Arial, sans-serif; /* Sets a clean, readable typeface */
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header, footer {
-    background: darkslategray; /* Darker shade for header and footer */
-    padding: 10px 0; /* Adds vertical padding */
-    color: white; /* White text for contrast */
+body {
+    background: #121212; /* A darker shade for a more modern look */
+    color: #f0f0f0; /* Slightly off-white for better readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, clean font */
+    text-align: center;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background: #1a1a1a; /* Darker shade for header */
+    padding: 20px 0; /* Ample vertical padding */
+    color: #f0f0f0;
 }
 
 h1 {
-    color: white; /* Ensures the main title is white */
+    font-size: 2.5em; /* Larger size for main title */
+    color: #ff4081; /* A vibrant color for emphasis */
 }
 
 section {
     padding: 20px;
-    margin: 20px;
-    background-color: hotpink; /* Set background color of sections to hot pink */
-    border-radius: 10px; /* Rounded corners for aesthetics */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds subtle shadow for depth */
+    margin: 20px auto; /* Center sections */
+    width: 80%; /* Optimal reading width */
+    background-color: #222; /* Dark grey for sections */
+    border-radius: 15px; /* Softened corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* More pronounced shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for interactions */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
 }
 
 h2 {
-    color: white; /* White color for section headers for readability */
+    font-size: 1.8em;
+    color: #ff4081; /* Matching the title color for consistency */
+    margin-bottom: 10px; /* Space below headers */
+}
+
+p {
+    font-size: 1.1em;
+    color: #e0e0e0; /* Lighter grey for text for readability */
+    padding: 0 20px; /* Padding for text inside sections */
 }
