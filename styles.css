@@ -27,8 +27,9 @@ h1 {
 
 h1 span {
     display: block; /* Makes the span appear on a new line */
-    font-size: 0.5em; /* Smaller font size for the names */
-    color: #ffffff; /* Optional: different color for names */
+    font-size: 0.5em; /* Adjusts the font size to be smaller */
+    color: #ffffff; /* Keeps the names white */
+    opacity: 0.75; /* Makes the names slightly translucent for subtlety */
 }
 
 section {
