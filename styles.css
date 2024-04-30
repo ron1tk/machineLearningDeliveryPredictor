@@ -1,28 +1,29 @@
 body {
     margin: 0;
-    background: green;
-    color: white; /* Improves readability on green background */
+    background: black; /* Changed background to black */
+    color: white; /* Ensures text is white for readability */
     font-family: Arial, sans-serif; /* Sets a clean, readable typeface */
     text-align: center;
 }
 
 header, footer {
-    background: darkgreen; /* Slightly darker green for header and footer */
+    background: darkslategray; /* Darker shade for header and footer */
     padding: 10px 0; /* Adds vertical padding */
+    color: white; /* White text for contrast */
 }
 
-h1, h2 {
-    color: #fff; /* Ensures headers are white for contrast */
+h1 {
+    color: white; /* Ensures the main title is white */
 }
 
 section {
     padding: 20px;
     margin: 20px;
-    background-color: rgba(0, 0, 0, 0.2); /* Adds transparency for contrast */
+    background-color: hotpink; /* Set background color of sections to hot pink */
     border-radius: 10px; /* Rounded corners for aesthetics */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds subtle shadow for depth */
 }
 
-footer {
-    font-size: 0.8em; /* Smaller font size for footer */
-    color: #ddd; /* Light grey color for footer text */
+h2 {
+    color: white; /* White color for section headers for readability */
 }
