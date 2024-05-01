@@ -1,5 +1,5 @@
 /* General resets and base styles */
-body, h1, h2, p {
+body, h1, h2, p, section {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -46,7 +46,7 @@ h1 span {
     margin-top: 10px;
 }
 
-.grid-container {
+.top-container, .bottom-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
