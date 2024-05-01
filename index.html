@@ -9,27 +9,30 @@
 <body>
     <header>
         <h1>On-Time Delivery Predictor <span>By Ronit Kapoor, Yiqun Duan, Noushin Khosravi Largani, and Jinqin Xiong</span></h1>
-        <!-- Navigation link to the plots page -->
         <nav>
             <a href="plots.html">View Plots</a>
         </nav>
     </header>
     <div class="grid-container">
-        <section id="introduction">
-            <h2>Project Overview</h2>
-            <p>Our project aims to predict whether deliveries will reach on time, allowing customers and companies to manage expectations and improve satisfaction.</p>
-        </section>
         <section id="function">
             <h2>Function</h2>
-            <p>This tool predicts delivery delays using various metrics like warehouse block, mode of shipment, and customer ratings, providing crucial insights to customers and logistics companies.</p>
+            <p>Our project will predict if the delivery will reach on time. We need a tool so that customers can know if their delivery will be delayed. In addition, we will use this information as input to help predict how customers will rate logistics companies.</p>
         </section>
         <section id="benefits">
-            <h2>Benefits</h2>
-            <p>This predictor increases customer satisfaction by alerting them about potential delays, reducing frustration and improving company reliability. Data scientists can also use this tool to study feature importance in delivery logistics.</p>
+            <h2>Who Would Benefit From This</h2>
+            <p>This has the potential to increase customer satisfaction, because the customer is less likely to be frustrated with a late package if they get an alert saying that the package will be late versus not knowing at all if the package will be delayed. Companies will also benefit from this because customer satisfaction will increase, leading to more usage of the company’s delivery services. Furthermore, our tool can provide insights on feature importance which will benefit data scientists with further studies on this topic.</p>
         </section>
         <section id="comparison">
-            <h2>Comparison with Existing Tools</h2>
-            <p>Unlike other tools that use computer vision to confirm delivery, our tool uses predictive analytics to forewarn about delays, offering proactive solutions rather than reactive notifications.</p>
+            <h2>Does Tool Already Exist</h2>
+            <p>On codeproject.com, there exists a tool where a camera can see if a package has arrived at a customer’s house. Then, the system can email the user alerting the user that the package has arrived, and the customer can go retrieve it. Our delivery detector is different. We don’t use computer vision to determine if a package will have arrived or not, rather we use different metrics to make a prediction if a delivery will be delayed. These metrics include warehouse block, mode of shipment, customer rating, and more.</p>
+        </section>
+        <section id="how-we-build">
+            <h2>How We Will Build This</h2>
+            <p>EDA and feature engineering: Our analysis will start from Exploratory Data Analysis (EDA) to get comprehensive statistical insights into each feature and the distribution of data. For machine learning models, we will employ a decision tree classifier and a logistic regression model for on-time delivery predictions and explore regression and classification models for customer ratings. We will utilize scikit-learn, pandas, and numpy for these tasks.</p>
+        </section>
+        <section id="demo">
+            <h2>How We Will Demonstrate</h2>
+            <p>In our website, users will enter statistics about the product based on these answers. We will be able to make a prediction if the delivery will make it on time or not. Furthermore, we will utilize the True Positive Rate and False Positive Rate of our predictor to make our website more accurate as time goes on.</p>
         </section>
     </div>
 </body>
