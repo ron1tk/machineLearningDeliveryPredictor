@@ -28,7 +28,12 @@
         </section>
         <section id="how-we-build">
             <h2>How We Will Build This</h2>
-            <p>EDA and feature engineering: Our analysis will start from Exploratory Data Analysis (EDA) to get comprehensive statistical insights into each feature and the distribution of data. For machine learning models, we will employ a decision tree classifier and a logistic regression model for on-time delivery predictions and explore regression and classification models for customer ratings. We will utilize scikit-learn, pandas, and numpy for these tasks.</p>
+            <p>EDA and feature engineering:
+                Our analysis will start from Exploratory Data Analysis (EDA) to get comprehensive statistical insights into each feature and the distribution of data. In addition, prior to model construction, it is important to pre-process the data (feature engineering). Categorical data, represented as strings, will be converted into digital inputs by One-hot Encoding. And numerical data will be normalized because of the disparate scales.
+                Machine learning model:
+                To predict on-time delivery, we opt for employing a decision tree classifier and a logistic regression model due to their efficacy in binary classification tasks. Additionally, we plan to explore the potential enhancement in performance and accuracy by implementing bagging trees.
+                To predict customer ratings, we plan to train both regression and classification models to determine the most effective approach. Regarding regression, we intend to explore linear regression and lasso regression. For classification, we will evaluate KNN with k ≥ 5, given the five levels of rating scores.
+                </p>
         </section>
     </div>
     <div class="bottom-container">
@@ -38,7 +43,7 @@
         </section>
         <section id="data-introduction">
             <h2>Data Introduction</h2>
-            <p>The dataset includes 12 features: ID, Warehouse Block, Mode of Shipment, Customer Care Calls, Customer Rating, Cost of the Product, Prior Purchases, Product Importance, Gender, Discount Offered, Weight in Grams, and Reached on Time. These variables encompass a mix of categorical, ordinal, and numerical data types.</p>
+            <p>The dataset includes 12 features: ID, Warehouse Block, Mode of Shipment, Customer Care Calls, Customer Rating, Cost of the Product, Prior Purchases, Product Importance, Gender, Discount Offered, Weight in Grams, and Reached on Time.</p>
         </section>
         <section id="references">
             <h2>References</h2>
@@ -46,8 +51,8 @@
             <p>2. <a href="https://www.jaggaer.com/press-release/first-ai-ontime-delivery-predictor/">Jaggaer's AI On-Time Delivery Predictor Press Release</a></p>
         </section>
         <section id="additional-information">
-            <h2>Additional Information</h2>
-            <p>More details and methodologies can be found in the linked references and data sources, offering further insights into the approaches used for predictive modeling and analysis.</p>
+            <h2>Existing resources we can use</h2>
+            <p>We can utilize the scikit-learn machine learning library in Python, which provides a wide range of tools for data analysis. Additionally, for data preprocessing tasks such as normalization, one-hot encoding, and train-test splitting, we can import pandas and numpy.</p>
         </section>
     </div>
 </body>
